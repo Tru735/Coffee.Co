@@ -21,4 +21,4 @@ This is the official website for Coffee.Co, a cafe franchise that aims to provid
 ### Prerequisites:
 To view and interact with this website, ensure you have a modern web browser like Chrome, Firefox, or Safari.
 
-### Clone the repository:
+### Clone the repository
