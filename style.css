@@ -1,0 +1,387 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+:root{
+    --mainColor:rgb(238, 163, 59);
+    --textColor1:rgba(255, 255, 255, 0.784);
+    --textColor2:var(--mainColor);
+    --primaryFont:Kanit;
+}
+
+*{
+    font-family:var
+    (--primaryFont), serif ;
+}
+
+.topBar{
+    background-color: #1b1a1a;
+    color: var(--textColor1);
+    height: 70px;
+    display: flex;
+    border-style: solid;
+    border-width: 1px;
+    border-color: var(--mainColor) ;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    margin-top: -8px; 
+    margin-left: -9px;
+    margin-right: -9px;
+    z-index: 1000;
+    min-width: 780px;
+}
+.logo{
+    height:70px;
+    width: 70px;
+    object-position: center;
+    margin-top: -30px;
+    
+}
+
+.heading{
+    font-family: var(--primaryFont);
+    height: 70px;
+    display: inline-block;
+    text-align:left;
+    padding: 0px 5px 0px 5px;
+    font-size:55px;
+    font-weight: 600;
+    align-items: baseline;
+    position: relative;
+}
+
+.about{
+    font-family: var(--primaryFont);
+    height: 80px;
+    margin-top: -8px;
+    padding-right: 10px;
+    justify-content:center;
+    align-items: center;
+    color: var(--textColor1);
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+}
+nav ul{
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+nav li{
+    display: inline-block;
+    list-style: none;
+    text-decoration: none;
+    align-items: center;
+    text-align: center;
+    margin-right: 15px;
+    font-size: 25px;
+    line-height: 1.5;
+    
+}
+nav li a{
+    display: inline-block;
+    text-decoration: none; 
+    color: var(--textColor1);
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+nav li a:hover{
+    text-decoration:underline;
+    color: var(--textColor2);
+}
+
+.mainBody{
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex: 1 1;
+    padding-top: 70px;
+    margin-left: -9px;
+    margin-right: -9px;
+    margin-bottom: -11px; 
+    height: 100vh;
+    width: 100vw;
+    background: url(media/output1-removebg-preview.png);
+    background-size:100%;
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: left;
+    color: white;
+    font-weight: 600;
+    justify-content: space-between;
+    align-content: flex-start;
+    min-height: 642px;
+    /* min-width: 750px; */
+}
+
+.mainBody button{
+    font-family: var(--primaryFont);
+    width: 150px;
+    height: 50px;
+    color: var(--textColor1);
+    background-color: var(--textColor2);
+    font-size: 26px;
+    border: white solid 1px;
+    transition-duration: 0.8s;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    /* z-index: 1000; */
+    
+}
+
+.mainBody button:hover{
+    background-color: var(--textColor1);
+    color: var(--textColor2);
+    border: var(--textColor2) solid 1px;
+    transition-duration: 0.8s;
+}
+.S{
+    z-index: 1000;
+}
+
+.L{
+    font-family: var(--primaryFont);
+    width: 150px;
+    height: 50px;
+    color: var(--textColor1);
+    background-color: var(--textColor2);
+    font-size: 26px;
+    border: white solid 1px;
+    transition-duration: 0.8s;
+    position: fixed;
+    bottom: 50px;
+    left: 50px;
+    z-index: 1000
+}
+
+.H1{
+    display: inline;
+    color: var(--textColor1);
+    font-family: var(--primaryFont);
+    font-size: 4rem;
+    height: fit-content;
+    position: relative;
+    left: 15px;
+    top: 60px;
+    text-align: start;
+    line-height: 70px;
+    flex-wrap:wrap;
+    /* min-width: 580px; */
+}
+
+.secondPage{
+    font-family: var(--primaryFont);
+    color: var(--textColor1); 
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex: 1 1;
+    padding-top: 70px;
+    margin-left: -9px;
+    margin-right: -9px;
+    margin-bottom: -11px; 
+    height: 100vh;
+    width: 100vw;
+    background: url(media/the-cup-of-latte-coffee-removebg-preview.png);
+    background-size:100%;
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: right;
+    align-items: center;
+
+
+}
+.line{
+    width: 400px;
+    height: 2px;
+    background-color: var(--textColor2);
+    border: black solid;
+    position: absolute;
+    top: 2px;
+}
+.line2{
+    width: 400px;
+    height: 2px;
+    background-color: var(--textColor2);
+    border: black solid;
+    position: absolute;
+    bottom: 2px;
+}
+
+.H2{
+    font-family: var(--primaryFont);
+    color: var(--textColor1);
+    font-size: 4rem;
+    position: relative;
+    top: 80px;
+    left: -28px;
+}
+
+.story{
+    display: flex;
+    flex-wrap: wrap;
+    width: 550px;
+    font-family: var(--primaryFont);
+    color: var(--textColor1);
+    font-size: 28px;
+    font-weight: 500;
+    position: relative;
+    top: 60px;
+    left:80px;
+    min-width: 895px;}
+
+/* @keyframes textBg {
+    0% {top: 195px; right: 0px; background-color: var(--textColor1); width: 669px; height: 199px;}
+    20% {top: 195px; right: 20px; background-color: var(--textColor1); width: 669px; height: 199px;}
+    40% {top: 195px; right: 40px; background-color: var(--textColor1); width: 669px; height: 199px;}
+    60% {top: 195px; right: 60px; background-color: var(--textColor1); width: 669px; height: 199px;}
+    80% {top: 195px; right: 80px; background-color: var(--textColor1); width: 669px; height: 199px;}
+    
+    
+} */
+
+.thirdPage{
+    background:black;
+    width: 100vw;
+    height: 120vh;
+    padding-top: 70px;
+    margin-left: -9px;
+    margin-right: -9px;
+    margin-bottom: -11px;
+    background-size:100%;
+    background-size: cover;
+    z-index: 2000;
+
+}
+
+.ourProducts{
+    display: flex;
+    font-family: var(--primaryFont);
+    color: var(--textColor1);
+    font-size: 4rem;
+    justify-content: center;
+
+}
+
+.cards{
+    display: grid;
+    grid-template: 80vh/1fr 1fr 1fr;
+    gap: 20px;
+    margin-right: 30px;
+    margin-left: 20px;
+    min-width: 1250px;
+    justify-content: center;
+    position: relative;
+    bottom:200px;
+    min-height: 700px;
+}
+
+.card{
+    padding-top: 40px;
+    display: grid;
+    grid-template: 100px 1fr/1fr;
+    width: 0.7fr;
+    height: 0.7fr;
+    border: var(--textColor2) solid;
+    border-radius: 30px;
+    align-items: center;
+    justify-items: center;
+    min-height: 700px;
+}
+
+.imgCont{
+    display: grid;
+    position: relative;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-template-rows: 220px;
+    gap: 20px;
+    margin-right: 30px;
+    margin-left: 20px;
+    top: 120px;
+    justify-items: center;
+    align-items: center;
+    min-width: 1250px;
+}
+
+.img1, .img2, .img3{
+    width: 220px;
+    height: 200px;
+
+}
+
+.images{
+    max-width: 100%;
+    max-height: 100%;
+}
+.coffeeName{
+    font-size: 3rem;
+    font-family: var(--primaryFont);
+    color: var(--textColor1);
+}
+
+.coffee{
+    align-items: center;
+    font-family: var(--primaryFont);
+    color: var(--textColor1);
+    text-align: center;
+    font-size: 30px;
+    list-style: none;
+    line-height: 62px;
+}
+
+.c1:hover{
+    color: var(--textColor2);
+    transition-duration:0.8s ;
+}
+
+.footer{
+    height: 40vh;
+    width: 100vw;
+    background: black;
+    margin: -9px -9px -9px -9px;
+    display: flex;
+    color: var(--textColor1);
+    font-family: var(--primaryFont);
+    align-items:flex-start;
+    justify-content: space-between;
+    position: relative;
+    bottom: 0px;
+    z-index: 1500;
+}
+
+.footerBox{
+    width: 100vw;
+    background-color: #1b1a1a;
+    color: var(--textColor1);
+    z-index: 1500;
+    height: 120px;
+    display: flex;
+    border-style: solid;
+    border-width: 1px;
+    border-color: var(--mainColor) ;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: 320px;
+    margin: 5px -8px -10px -8px;
+}
+
+.AboutUs, .contact, .opening{
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+}
+.footer h1{
+    font-size: 3rem;
+    text-align: center;
+}
+
+.us{
+    color: var(--textColor2);
+}
